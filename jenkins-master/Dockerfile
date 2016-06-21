@@ -17,7 +17,6 @@ RUN apt-get update && apt-get install -y \
 
 # Install Arduino IDE
 RUN wget -O arduinoide.tar.xz https://www.arduino.cc/download.php?f=/arduino-1.6.9-linux32.tar.xz
-RUN mkdir /opt/
 RUN tar --xz -xvf arduinoide.tar.xz -C /opt/
 
 USER jenkins
